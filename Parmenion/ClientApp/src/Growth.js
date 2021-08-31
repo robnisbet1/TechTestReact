@@ -86,11 +86,11 @@ export default () => {
             <Row form>
               <FormGroup>
                 <Label for="fundId">Fund</Label>
-                <Input name="fundId" id="fundId" />
+                <Input name="fundId" id="fundId" defaultValue="TSLA"  />
               </FormGroup>
               <FormGroup>
                 <Label for="yearsToInvest">Years to invest</Label>
-                <Input name="yearsToInvest" id="yearsToInvest" />
+                <Input name="yearsToInvest" id="yearsToInvest"  defaultValue="20"/>
               </FormGroup>
               <FormGroup>
                 <Label for="initialInvestment">Initial investment</Label>
@@ -98,7 +98,7 @@ export default () => {
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>&pound;</InputGroupText>
                   </InputGroupAddon>
-                  <Input name="initialInvestment" id="initialInvestment" />
+                  <Input name="initialInvestment" id="initialInvestment"  defaultValue="50000" />
                 </InputGroup>
               </FormGroup>
               <FormGroup>
@@ -107,7 +107,7 @@ export default () => {
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>&pound;</InputGroupText>
                   </InputGroupAddon>
-                  <Input name="monthlyInvestment" id="monthlyInvestment" />
+                  <Input name="monthlyInvestment" id="monthlyInvestment"  defaultValue="100" />
                 </InputGroup>
               </FormGroup>
               <FormGroup>

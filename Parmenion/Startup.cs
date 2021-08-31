@@ -14,8 +14,6 @@ namespace Parmenion
 
             services.AddControllers();
             services.AddSpaStaticFiles(configuration => configuration.RootPath = "ClientApp/build");
-
-            services.AddTransient<IFundData, FundDataService>();
         }
 
         public void Configure(IApplicationBuilder app)
