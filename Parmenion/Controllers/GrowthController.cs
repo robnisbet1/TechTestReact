@@ -10,17 +10,17 @@ namespace Parmenion.Controllers
     [ApiController]
     public class GrowthController : ControllerBase
     {
-        private readonly IFundData fundService;
+        private readonly IFundDataService fundDataService;
 
-        public GrowthController(IFundData fundService)
+        public GrowthController(IFundDataService fundDataService)
         {
-            this.fundService = fundService;
+            this.fundDataService = fundDataService;
         }
 
         [HttpGet]
         public ActionResult<IEnumerable<Growth>> CalculateGrowth(string fundId, decimal initialInvestment, decimal monthlyInvestment, int yearsToInvest)
         {
-            var fund = fundService.GetFund(fundId).Result;
+            var fund = fundDataService.GetFund(fundId).Result;
 
             var firstMonth = new Growth
             {
