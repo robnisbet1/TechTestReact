@@ -5,7 +5,7 @@ namespace ThirdPartySDK
     using System.Linq;
     using System.Threading.Tasks;
 
-    public class FundDataService : IFundData
+    public class FundDataService : IFundDataService
     {
         private static readonly Random random = new Random();
         private static readonly Dictionary<string, FundData> funds = new Dictionary<string, FundData>

@@ -3,7 +3,7 @@ namespace ThirdPartySDK
     using System.Collections.Generic;
     using System.Threading.Tasks;
 
-    public interface IFundData
+    public interface IFundDataService
     {
         Task<IEnumerable<string>> AvailableFunds();
 
